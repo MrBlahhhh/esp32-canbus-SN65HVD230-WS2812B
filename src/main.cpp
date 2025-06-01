@@ -6,14 +6,14 @@
 #define SIMULATE_RPM
 
 // LED Pin Definitions
-#define LED_PIN 13        // Pin connected to WS2812B data line
-#define NUM_LEDS 8        // Number of LEDs in the strip
+#define LED_PIN GPIO_NUM_4  // Changed to GPIO4 for WS2812B data line
+#define NUM_LEDS 8          // Number of LEDs in the strip
 #define LED_TYPE WS2812B
 #define COLOR_ORDER GRB
 
 // TWAI pin definitions using gpio_num_t
-#define TWAI_TX_PIN GPIO_NUM_21
-#define TWAI_RX_PIN GPIO_NUM_22
+#define TWAI_TX_PIN GPIO_NUM_5  // Changed to GPIO5
+#define TWAI_RX_PIN GPIO_NUM_6  // Changed to GPIO6
 
 // Timing variables for 10 Hz (100ms interval)
 unsigned long lastUpdateTime = 0;
